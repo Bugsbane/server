@@ -331,8 +331,8 @@ OCA.Sharing.PublicApp = {
 			$.get(OC.generateUrl('apps/files_sharing/testremote'), {remote: remote}).then(function (protocol) {
 				if (protocol !== 'http' && protocol !== 'https') {
 					toggleLoading();
-					OC.dialogs.alert(t('files_sharing', 'No ownCloud installation (7 or higher) found at {remote}', {remote: remote}),
-						t('files_sharing', 'Invalid ownCloud url'));
+					OC.dialogs.alert(t('files_sharing', 'No Nextcloud installation found at {remote}', {remote: remote}),
+						t('files_sharing', 'Invalid Nextcloud url'));
 				} else {
 					OC.redirect(protocol + '://' + url);
 				}
