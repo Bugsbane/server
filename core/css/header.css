@@ -31,7 +31,7 @@
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	position: fixed;
+/*	position: fixed;*/
 	top: 0;
 	left: 0;
 	right: 0;
@@ -68,7 +68,7 @@
 }
 
 #header .logo {
-	background-image: url('../img/logo-icon.svg');
+	background-image: url('../img/logo-icon.svg?v=1');
 	background-repeat: no-repeat;
 	background-size: 175px;
 	background-position: center 30px;
@@ -80,7 +80,7 @@
 #header .logo-icon {
 	/* display logo so appname can be shown next to it */
 	display: inline-block;
-	background-image: url('../img/logo-icon.svg');
+	background-image: url('../img/logo-icon.svg?v=1');
 	background-repeat: no-repeat;
 	width: 62px;
 	height: 34px;
@@ -293,12 +293,6 @@
 	float: right;
 	color: #ddd;
 	cursor: pointer;
-}
-#settings .icon-loading-small-dark {
-	display: inline-block;
-	margin-bottom: -3px;
-	margin-right: 6px;
-	background-size: 16px 16px;
 }
 #expand {
 	display: block;
